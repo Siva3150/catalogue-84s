@@ -31,7 +31,7 @@ pipeline {
             steps {
                 script{
                     """
-                    npm install 
+                       npm install 
 
                     """
                 }
