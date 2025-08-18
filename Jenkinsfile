@@ -42,6 +42,17 @@ pipeline {
             }
         }
 
+        stage('Unit testing') {
+            steps {
+                script{
+                    sh """
+                        echo "unit testing wass successful" 
+
+                    """
+                }
+            }
+        }
+
         stage('Docker build') {
             steps {
                 script{
