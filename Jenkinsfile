@@ -14,7 +14,7 @@ pipeline {
         disableConcurrentBuilds()
     }
     parameters {
-        booleanParam(name: 'deploy', defaultValue: false, description: 'Toggle this value')
+        booleanParam(name: 'deploy', defaultValue: true, description: 'Toggle this value')
     }
     // Build
     stages {
