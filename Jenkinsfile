@@ -74,7 +74,7 @@ pipeline {
             build job: 'catalogue-cd',
             parameters: [
                 string(name: 'appVersion', value: "${appVersion}"),
-                choice(name: 'deploy_to', value: 'dev')
+                string(name: 'deploy_to', value: 'dev')
             ],
             propagate: false, // even if this job fails, main pipeline will not fail
             wait: false       // main pipeline will not wait for job completion
