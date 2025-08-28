@@ -82,7 +82,7 @@ pipeline {
                         script: """
                             curl -s -H "Accept: application/vnd.github+json" \
                                  -H "Authorization: token ${GITHUB_TOKEN}" \
-                                 https://api.github.com/repos/siva3150/catalogue/dependabot/alerts
+                                 https://api.github.com/repos/siva3150/catalogue-84s/dependabot/alerts
                         """,
                         returnStdout: true
                     ).trim()
