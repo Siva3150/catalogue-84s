@@ -5,7 +5,7 @@ def configMap = [
     component : "catalogue"
 ]
 
- nodejsEKSPipeline(configMap) // by default it will call, call function inside this pipeline
+ nodejsEKSpipeline(configMap) // by default it will call, call function inside this pipeline
 
 
 
